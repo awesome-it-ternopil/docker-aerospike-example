@@ -1,15 +1,15 @@
 **Example of integration testing with docker and Aerospike**
 
-##1. Install [docker](https://docs.docker.com/engine/installation/#get-started)
+##1. Install [docker](https://docs.docker.com/engine/installation/#get-started) ##
 
-####For Ubuntu
-#####Uninstall old versions
+####For Ubuntu ####
+#####Uninstall old versions #####
 
 ```
 $ sudo apt-get remove docker docker-engine
 ```
 
-#####Install using the repository
+#####Install using the repository #####
 
 1. Install packages to allow apt to use a repository over HTTPS:
 
