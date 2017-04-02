@@ -1,15 +1,16 @@
 **Example of integration testing with docker and Aerospike**
 
-##1. Install [docker](https://docs.docker.com/engine/installation/#get-started) ##
+## 1. Install [docker](https://docs.docker.com/engine/installation/#get-started)
 
-####For Ubuntu ####
-#####Uninstall old versions #####
+#### For Ubuntu
+
+##### Uninstall old versions
 
 ```
 $ sudo apt-get remove docker docker-engine
 ```
 
-#####Install using the repository #####
+##### Install using the repository
 
 1. Install packages to allow apt to use a repository over HTTPS:
 
@@ -47,7 +48,8 @@ $ sudo add-apt-repository \
    stable"
 ```
 
-### 2. You should be able to provide configuration purely through environment variables.
+## 2. You should be able to provide configuration purely through environment variables
+
 ```
 export DOCKER_HOST=tcp://127.0.0.1:2375
 ```
@@ -56,7 +58,8 @@ Or
 export DOCKER_HOST=unix:///var/run/docker.sock
 ```
 
-### 3. Sbt dependencies for Suite wrapping and docker client
+## 3. Sbt dependencies for Suite wrapping and docker client
+
 ```
 "com.whisk" %% "docker-testkit-scalatest"    % "0.9.0" % "test"
 "com.whisk" %% "docker-testkit-impl-spotify" % "0.9.0" % "test"
